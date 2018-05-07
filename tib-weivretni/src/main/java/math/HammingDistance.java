@@ -1,6 +1,6 @@
 //https://www.interviewbit.com/problems/sum-of-pairwise-hamming-distance/
 
-package math;
+package Math;
 
 import java.util.ArrayList;
 import java.util.List;
