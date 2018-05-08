@@ -8,23 +8,16 @@ public class GCD {
 	}
 
 	public static int gcd(int A, int B) {
-		int gcd = 0;
-		int smallerNum = returnSmallest(A, B);
-		if(A == 0){
-			return B;
+		int remainder = 0;
+		while(B > 0){
+			remainder = A % B;
+			A = B;
+			B = remainder;
 		}
-		if(B == 0){
-			return A;
-		}
-		for(int i = 1; i <= smallerNum; i++){
-			if(((A % i) == 0) && (B % i == 0)){
-				gcd = i;
-			}
-		}
-		return gcd;
+		return A;
 	}
-	
+
 	public static void main(String[] args) {
-		System.out.println(gcd(1,0));
+		System.out.println(gcd(6, 9));
 	}
 }
