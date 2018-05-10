@@ -1,10 +1,10 @@
 package Array;
 
-import java.util.ArrayList;
+import java.util.TreeSet;
 
 public class NobleIntegers {
-	public static ArrayList<Integer> findNobleInteger(int[] arr) {
-		ArrayList<Integer> nobleIntegersList = new ArrayList<>();
+	public static TreeSet<Integer> findNobleInteger(int[] arr) {
+		TreeSet<Integer> nobleIntegersList = new TreeSet<>();
 		int arrSize = arr.length;
 		for (int i = 0; i < arrSize; i++) {
 			int count = 0;
@@ -22,7 +22,7 @@ public class NobleIntegers {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(findNobleInteger(new int[] { 7, 3, 16, 10 }));
+		System.out.println(findNobleInteger(new int[] { 7, 3, 16, 10, 3 }));
 		System.out.println(findNobleInteger(new int[] { -1, -9, -2, -78, 0 }));
 	}
 }
