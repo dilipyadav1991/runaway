@@ -18,16 +18,14 @@ public class TicketbookingSystem {
 		while (true) {
 			// Get first element from array
 			Pair pair = queue.peek();
-			if ((pair.key == ticketAvail) && pair.value) {
+			int value = pair.key;
+			boolean isP = pair.value;
+			countTime++;
+			if (value == ticket && isP && ++ticketAvail == ticket) {
 				return countTime;
-			} else {
-				pair = queue.poll();
-				if (pair.key == ticket) {
-					++ticketAvail;
-				}
-				countTime++;
-				queue.add(pair);
 			}
+			Pair temp = queue.poll();
+			queue.add(temp);
 		}
 	}
 
