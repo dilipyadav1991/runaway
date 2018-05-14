@@ -1,6 +1,6 @@
 package Other;
 
-public class ZigZagMAtrix {
+public class DiagonalMatrix {
     public static int R,C;
 
 	public static void main(String[] args) {
