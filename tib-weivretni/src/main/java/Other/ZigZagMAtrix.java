@@ -17,7 +17,7 @@ public class ZigZagMAtrix {
   }
 
 	private static void diagonalOrder(int[][] arr) {
-		//First half diagonal element
+		//First column
 		for(int i = 0; i < R; i++){
 			int row = i;
 			int column = 0;
@@ -28,7 +28,7 @@ public class ZigZagMAtrix {
 			}
 			System.out.println();
 		}
-		//First half diagonal element
+		//Last row
 		for(int j = 1; j < C; j++){
 			int row = R - 1;
 			int column = j;
