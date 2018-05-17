@@ -21,7 +21,7 @@ public class DuplicatesInArray {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(findDuplicate(new int[] { 1, 1, 1, 2, 2 }));
+		System.out.println(findDuplicate(new int[] { 0, 1, 0, 2, 2 }));
 	}
 
 }
