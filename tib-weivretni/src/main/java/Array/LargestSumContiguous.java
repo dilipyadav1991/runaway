@@ -7,31 +7,28 @@ import java.util.ArrayList;
 
 public class LargestSumContiguous {
 	public static ArrayList<Integer> findLargestSumContiguous(int a[]) {
-		ArrayList<Integer> list = new ArrayList<>();
+		ArrayList<Integer> result = new ArrayList<>();
 		int start = 0;
 		int end = 0;
-		int x = 0;
+		int s = 0;
+		int currMax = 0;
 		int maxSoFar = Integer.MIN_VALUE;
-		int currentMax = 0;
-		for (int i = 0; i < a.length; i++) {
-			currentMax += a[i];
-			if (maxSoFar < currentMax) {
-				maxSoFar = currentMax;
-				start = x;
+		for(int i = 0; i < a.length; i++){
+			currMax += a[i];
+			if(currMax < 0){
+				currMax = 0;
+				s = i + 1;
+			}
+			if(currMax > maxSoFar){
+				maxSoFar = currMax;
 				end = i;
-			}
-			if (currentMax < 0) {
-				currentMax = 0;
-				x = i + 1;
+				start = s;
 			}
 		}
-		System.out.println("Maximum contiguous sum is " + maxSoFar);
-		System.out.println("Starting index " + start);
-		System.out.println("Ending index " + end);
-		for (int i = start; i <= end; i++) {
-			list.add(a[i]);
+		for(int i = start; i <= end; i++){
+			result.add(a[i]);
 		}
-		return list;
+		return result;
 	}
 
 	public static void main(String[] args) {
