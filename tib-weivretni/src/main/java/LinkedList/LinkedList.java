@@ -38,5 +38,16 @@ public class LinkedList {
 		ll.printHead();
 		ll.delete(4);
 		ll.traverseList();
+		ll.length();
+	}
+
+	private void length() {
+		Node temp = head;
+		int len = 0;
+		while(temp!=null){
+			len++;
+			temp = temp.next;
+		}
+		System.out.println("The length of linked list is : " + len);
 	}
 }
