@@ -9,7 +9,7 @@ public class MaxAccuringCharacter {
 	}
 
 	public static void maxOccuringChar(String str) {
-		char result = 0;
+		String result = "c";
 		int strLen = str.length();
 		int[] count = new int[256];
 		char[] charArray = str.toCharArray();
@@ -21,9 +21,9 @@ public class MaxAccuringCharacter {
 		for (int i = 0; i < strLen; i++) {
 			if (count[charArray[i]] > max) {
 				max = count[charArray[i]];
-				result = charArray[i];
+				//result = charArray[i];
 			}
 		}
-		System.out.println("Max Occuring character: " + result);
+		//System.out.println("Max Occuring character: " + result);
 	}
 }
