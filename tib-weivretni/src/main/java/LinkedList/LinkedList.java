@@ -20,13 +20,36 @@ public class LinkedList {
 		if (head.data == data) {
 			head = head.next;
 		} else {
-			while (temp != null && temp.next!= null) {
+			while (temp != null && temp.next != null) {
 				if (temp.next.data == data) {
 					temp.next = temp.next.next;
 				}
 				temp = temp.next;
 			}
 		}
+	}
+
+	private void length() {
+		Node temp = head;
+		int len = 0;
+		while (temp != null) {
+			len++;
+			temp = temp.next;
+		}
+		System.out.println("The length of linked list is : " + len);
+	}
+
+	public void reverseList() {
+		Node current = head;
+		Node prev = null;
+		Node next = null;
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			prev = current;
+			current = next;
+		}
+		head = prev;
 	}
 
 	public static void main(String[] args) {
@@ -39,15 +62,10 @@ public class LinkedList {
 		ll.delete(4);
 		ll.traverseList();
 		ll.length();
+		System.out.println("Reversing list: \n");
+		ll.reverseList();
+		ll.printHead();
+		ll.traverseList();
 	}
 
-	private void length() {
-		Node temp = head;
-		int len = 0;
-		while(temp!=null){
-			len++;
-			temp = temp.next;
-		}
-		System.out.println("The length of linked list is : " + len);
-	}
 }
