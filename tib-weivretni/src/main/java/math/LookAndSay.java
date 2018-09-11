@@ -2,12 +2,14 @@ package Math;
 
 public class LookAndSay {
 	public static void main(String[] args) {
-		String str = "11123456577";
-		int len = str.length();
-		findNextTerm(str, len);
+		String number = "1";
+		for(int i = 1; i < 10; i++){
+			System.out.println(number);
+			number = findNextTerm(number, number.length());
+		}
 	}
 
-	private static void findNextTerm(String str, int len) {
+	private static String findNextTerm(String str, int len) {
 		String result = "";
 		char ch = str.charAt(0);
 		int times = 1;
@@ -23,6 +25,6 @@ public class LookAndSay {
 				ch = nextChar;
 			}
 		}
-		System.out.println(result);
+		return result;
 	}
 }
