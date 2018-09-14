@@ -15,12 +15,8 @@ public class KReversedList {
 			current = next;
 			i++;
 		}
-		Node temp = previous;
-		while (temp.next != null) {
-			temp = temp.next;
-		}
 		if (next != null) {
-			temp.next = next;
+			head1.next = reverseList(next, k);
 		}
 		head1 = previous;
 		return head1;
