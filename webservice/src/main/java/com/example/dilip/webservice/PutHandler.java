@@ -24,7 +24,7 @@ public class PutHandler implements HttpHandler {
 		// information,
 		// and to prepare and send the response.
 		
-		if (method.equals("PUT")) {
+		if (method.equals("POST")) {//create new resource
 			String body = ParserUtil.parseBody(exchange.getRequestBody());
 			Map<String, String> dataMap = ParserUtil.getJsonString(body.toString());
 			String name1 = dataMap.get("name");
@@ -58,7 +58,7 @@ public class PutHandler implements HttpHandler {
 				response = "Name not found";
 				statusCode = 404;
 			}
-		}else if(method.equals("POST")){
+		}else if(method.equals("PUT")){//Update the resource
 			String body = ParserUtil.parseBody(exchange.getRequestBody());
 			Map<String, String> dataMap = ParserUtil.getJsonString(body.toString());
 			//updating name from id
