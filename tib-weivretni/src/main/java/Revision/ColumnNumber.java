@@ -1,7 +1,7 @@
 package Revision;
 
 public class ColumnNumber {
-	private String columnTitle = "A"; // column number is 1('A') * 26 + 2(B)
+	private String columnTitle = "AZ"; //1 * 26^1 + 26 * 26^0
 	public void findColumnNumber(){
 		int number = 0;
 		char[] ch = columnTitle.toCharArray();
