@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 public class HeapSort implements SortAlgorithm{
+	
+	@Override
 	public String sort(){
 		return "This is Heap sort algorithm";
 	}
