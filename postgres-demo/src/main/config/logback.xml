@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="5 seconds">
+  <property scope="context" name="es_index" value="autofind-detail" />
+  <property name="PATTERN"
+            value="[runway:${env:-dev}:${HOSTNAME}] %-30(%d{HH:mm:ss.SSS} [%thread]) %-5level %logger{36} - %msg - [%method:%line] - [%mdc] - [%marker] %n"/>
+            
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${logsDir:-logs}/${logFileName:-runway}.log</File>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${logsDir:-logs}/archives/${logFileName:-r4e-autofind}.%i.log</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>1</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>64MB</maxFileSize>
+		</triggeringPolicy>
+
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>${PATTERN}</Pattern>
+		</encoder>
+
+	</appender>
+	
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${PATTERN}</pattern>
+		</encoder>
+	</appender>
+	
+	<root>
+		<level value="INFO" />
+		<appender-ref ref='FILE' />
+		<appender-ref ref='CONSOLE' />
+	</root>
+	
+	<!-- Add your custom loggers here -->
+	<logger name="com.reputation.redis.RedisContainer" level="info" />
+	<logger name="com.reputation.autofind.service.AutofindService" level="info" />
+	
+</configuration>
