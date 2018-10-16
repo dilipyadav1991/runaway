@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.postgresdemo.model.Student;
-import com.example.postgresdemo.repository.StudentRepository;
+import com.example.postgresdemo.model.ReputationEmployee;
+import com.example.postgresdemo.repository.ReputationEmpoyeeRepository;
+import com.example.postgresdemo.utils.MdcUtils;
 
 @RestController
 public class WebController {
@@ -21,24 +22,23 @@ public class WebController {
 	private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 	
 	@Autowired
-	StudentRepository repository;
+	ReputationEmpoyeeRepository repository;
 
 	@RequestMapping("/save")
 	public String process() {
-		// save a single Customer
-		repository.save(new Student("RIPL009","Dilip", "Yadav"));
+		repository.save(new ReputationEmployee("RIPL009","Dilip", "Yadav"));
 		return "Done";
 	}
 
-	@GetMapping("/getStudentName")
-	public String getStudent(@RequestParam("id") String id) {
-		Optional<Student> findbyid = repository.findById(id);
-		Student student = findbyid.get();
-		return student.getName();
+	@GetMapping("/getReputationEmployeeName")
+	public String getReputationEmployee(@RequestParam("id") String id) {
+		Optional<ReputationEmployee> findbyid = repository.findById(id);
+		ReputationEmployee ReputationEmployee = findbyid.get();
+		return ReputationEmployee.getName();
 	}
 
-	@PostMapping(value = "/saveStudent")
-	public Student createStudent(@RequestBody Student student) {// @RequestBody
+	@PostMapping(value = "/saveReputationEmployee")
+	public ReputationEmployee createReputationEmployee(@RequestBody ReputationEmployee ReputationEmployee) {// @RequestBody
 																// means to
 																// parse JSON
 																// data into map
@@ -48,8 +48,10 @@ public class WebController {
 																// content type
 																// is
 																// "application/json;charset=UTF-8"
-		logger.info("Saving student data");
-		logger.info("Student name: {}", student.getFirstName());
-		return repository.save(student);
+		MdcUtils.put("r_e_name", ReputationEmployee.getFirstName());
+		logger.info("Saving ReputationEmployee data");
+		logger.info("ReputationEmployee name: {}", ReputationEmployee.getFirstName());
+		MdcUtils.removeKey("r_e_name".toString());
+		return repository.save(ReputationEmployee);
 	}
 }

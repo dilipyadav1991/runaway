@@ -1,0 +1,829 @@
+[runway:dev:DYadav-MBP.local] 21:47:39.805 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 18018 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:39.808 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:39.850 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b1473ab: startup date [Tue Oct 16 21:47:39 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:40.725 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc7a349b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.059 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.079 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.095 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.096 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.104 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.209 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.209 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1362 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.258 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.263 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.463 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.552 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.594 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.608 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.664 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.666 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.699 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.799 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.900 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:41.902 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2819c460 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.262 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.557 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.775 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b1473ab: startup date [Tue Oct 16 21:47:39 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.807 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.842 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.842 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getStudentName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getStudent(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.843 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveStudent],methods=[POST]}" onto public com.example.postgresdemo.model.Student com.example.postgresdemo.controller.WebController.createStudent(com.example.postgresdemo.model.Student) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.844 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.845 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.867 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:42.867 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.090 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.092 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.096 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.106 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.329 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.339 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:43.342 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 3.818 seconds (JVM running for 4.295) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:47.291 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:47.291 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:47.319 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:47.413 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Saving student data - [createStudent:51] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:47:47.414 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Student name: Vinod - [createStudent:52] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.983 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b1473ab: startup date [Tue Oct 16 21:47:39 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.985 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.986 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.988 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.988 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:50:04.992 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:39.910 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1115 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:39.914 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:39.961 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Tue Oct 16 21:54:39 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.239 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$366a4031] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.726 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.750 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.766 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.766 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.777 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.892 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.893 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1934 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.949 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.953 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.953 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.953 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:41.954 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:42.193 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.314 [main]            ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization. - [throwPoolInitializationException:567] - [] - [] 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0$$FastClassBySpringCGLIB$$4f2cbdbd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.example.postgresdemo.PostgresDemoApplication.main(PostgresDemoApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 80 common frames omitted
+[runway:dev:DYadav-MBP.local] 21:54:43.316 [main]            WARN  o.s.b.a.orm.jpa.DatabaseLookup - Unable to determine jdbc url from datasource - [getDatabase:80] - [] - [] 
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0$$FastClassBySpringCGLIB$$4f2cbdbd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$554102a0.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.example.postgresdemo.PostgresDemoApplication.main(PostgresDemoApplication.java:10)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 64 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 65 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 80 common frames omitted
+[runway:dev:DYadav-MBP.local] 21:54:43.354 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.378 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.486 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.488 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.538 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:43.678 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:44.685 [main]            ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization. - [throwPoolInitializationException:567] - [] - [] 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.example.postgresdemo.PostgresDemoApplication.main(PostgresDemoApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 52 common frames omitted
+[runway:dev:DYadav-MBP.local] 21:54:44.686 [main]            WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - [initiateService:132] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:44.704 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:44.723 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null - [makeLobCreatorBuilder:63] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:44.725 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ca93621 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:45.229 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.234 [main]            ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization. - [throwPoolInitializationException:567] - [] - [] 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.example.postgresdemo.PostgresDemoApplication.main(PostgresDemoApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 50 common frames omitted
+[runway:dev:DYadav-MBP.local] 21:54:46.235 [main]            WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08001 - [logExceptions:129] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.236 [main]            ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - [logExceptions:131] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.238 [main]            WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution - [refresh:558] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.241 [main]            INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.256 [main]            INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. - [logAutoConfigurationReport:101] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:54:46.258 [main]            ERROR o.s.boot.SpringApplication - Application run failed - [reportFailure:863] - [] - [] 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$96/896644936.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.example.postgresdemo.PostgresDemoApplication.main(PostgresDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 17 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:115)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 21 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 35 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 50 common frames omitted
+[runway:dev:DYadav-MBP.local] 21:55:09.776 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1141 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:09.780 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:09.819 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 21:55:09 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:10.784 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a0827d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.119 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.137 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.151 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.151 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.160 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.271 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.271 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1455 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.324 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.327 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.328 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.328 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.328 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.465 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.656 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.696 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.710 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.770 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.771 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.809 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:11.907 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:12.024 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:12.025 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6a472566 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:12.416 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:12.759 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:12.998 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 21:55:09 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.042 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.085 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getStudentName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getStudent(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.086 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveStudent],methods=[POST]}" onto public com.example.postgresdemo.model.Student com.example.postgresdemo.controller.WebController.createStudent(com.example.postgresdemo.model.Student) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.086 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.089 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.089 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.114 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.115 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.364 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.365 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.370 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.381 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.623 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.649 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:13.653 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 4.135 seconds (JVM running for 4.603) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:45.655 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:45.655 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:45.674 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:45.785 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Saving student data - [createStudent:51] - [] - [] 
+[runway:dev:DYadav-MBP.local] 21:55:45.785 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Student name: Vinod - [createStudent:52] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.982 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 21:55:09 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.984 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.985 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.986 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.987 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:21:02.989 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:42.455 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1443 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:42.458 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:42.502 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Tue Oct 16 22:28:42 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.499 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a0827d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.835 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.860 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.872 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.873 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.881 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.971 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:43.972 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1472 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.022 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.025 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.025 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.025 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.026 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.245 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.341 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.399 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.415 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.476 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.477 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.509 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.607 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.696 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:44.698 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6a472566 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.093 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.388 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.666 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Tue Oct 16 22:28:42 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.722 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.755 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getReputationEmployeeName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getReputationEmployee(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.756 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveReputationEmployee],methods=[POST]}" onto public com.example.postgresdemo.model.ReputationEmployee com.example.postgresdemo.controller.WebController.createReputationEmployee(com.example.postgresdemo.model.ReputationEmployee) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.757 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.759 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.760 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.782 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:45.782 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.007 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.008 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.013 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.022 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.263 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.275 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:28:46.278 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 4.096 seconds (JVM running for 4.57) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:29:12.743 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:29:12.744 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:29:12.765 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.714 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Tue Oct 16 22:28:42 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.717 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.718 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.720 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.721 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:30:00.723 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:31:58.895 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1485 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:31:58.898 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:31:58.941 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be6e01c: startup date [Tue Oct 16 22:31:58 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:31:59.838 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7dfe49c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.198 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.217 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.234 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.234 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.244 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.348 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.349 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1411 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.402 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.405 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.406 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.571 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.734 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.782 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.796 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.866 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.867 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:00.913 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:01.007 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:01.096 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:01.098 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@fab35b1 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:01.461 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:01.779 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.007 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be6e01c: startup date [Tue Oct 16 22:31:58 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.043 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.079 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getReputationEmployeeName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getReputationEmployee(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.080 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveReputationEmployee],methods=[POST]}" onto public com.example.postgresdemo.model.ReputationEmployee com.example.postgresdemo.controller.WebController.createReputationEmployee(com.example.postgresdemo.model.ReputationEmployee) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.081 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.083 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.084 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.107 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.108 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.312 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.313 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.317 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.326 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.564 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.575 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:02.578 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 3.943 seconds (JVM running for 4.413) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:07.423 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:07.423 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:32:07.441 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.725 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be6e01c: startup date [Tue Oct 16 22:31:58 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.728 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.729 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.731 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.731 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:34.734 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:41.535 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1525 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:41.538 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:41.580 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c93084c: startup date [Tue Oct 16 22:36:41 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.526 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7684c2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.865 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.885 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.898 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.899 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.906 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.994 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:42.994 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1417 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.061 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.064 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.064 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.064 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.065 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.281 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.375 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.418 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.435 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.500 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.501 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.538 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.641 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.731 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:43.732 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5633ed82 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.120 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.396 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.675 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c93084c: startup date [Tue Oct 16 22:36:41 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.728 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.761 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getReputationEmployeeName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getReputationEmployee(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.762 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveReputationEmployee],methods=[POST]}" onto public com.example.postgresdemo.model.ReputationEmployee com.example.postgresdemo.controller.WebController.createReputationEmployee(com.example.postgresdemo.model.ReputationEmployee) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.762 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.765 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.766 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.793 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:44.794 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.079 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.081 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.086 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.095 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.372 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.387 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:45.390 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 4.111 seconds (JVM running for 4.589) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:49.039 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:49.040 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:49.056 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:49.157 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Saving ReputationEmployee data - [createReputationEmployee:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 22:36:49.157 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - ReputationEmployee name: Binod - [createReputationEmployee:51] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.710 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c93084c: startup date [Tue Oct 16 22:36:41 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.713 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.714 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.716 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.718 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:31.721 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:56.781 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1726 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:56.785 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:56.826 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 23:03:56 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:57.824 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8dd48002] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.159 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.180 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.194 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.195 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.203 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.291 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.291 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1468 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.354 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.357 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.357 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.358 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.358 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.581 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.669 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.709 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.725 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.784 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.785 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.819 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:58.915 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.003 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.004 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1907874b - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.368 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.650 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.893 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 23:03:56 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.949 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.982 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getReputationEmployeeName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getReputationEmployee(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.982 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveReputationEmployee],methods=[POST]}" onto public com.example.postgresdemo.model.ReputationEmployee com.example.postgresdemo.controller.WebController.createReputationEmployee(com.example.postgresdemo.model.ReputationEmployee) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.983 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.984 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:03:59.985 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.006 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.006 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.193 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.195 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.199 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.208 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.443 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.453 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:00.456 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 3.936 seconds (JVM running for 4.403) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:04.309 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:04.310 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:04.326 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:04.426 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Saving ReputationEmployee data - [createReputationEmployee:51] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:04.426 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - ReputationEmployee name: Binod - [createReputationEmployee:52] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.446 [Thread-4]        INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Oct 16 23:03:56 IST 2018]; root of context hierarchy - [doClose:993] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.449 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown - [destroy:451] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.450 [Thread-4]        INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans - [unregisterBeans:185] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.451 [Thread-4]        INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' - [destroy:597] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.452 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... - [close:381] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:18.455 [Thread-4]        INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. - [close:383] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:36.369 [main]            INFO  c.e.p.PostgresDemoApplication - Starting PostgresDemoApplication on DYadav-MBP.local with PID 1740 (/Users/dyadav/githome/runaway/postgres-demo/bin/main started by dyadav in /Users/dyadav/githome/runaway/postgres-demo) - [logStarting:50] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:36.372 [main]            INFO  c.e.p.PostgresDemoApplication - No active profile set, falling back to default profiles: default - [logStartupProfileInfo:680] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:36.417 [main]            INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be6e01c: startup date [Tue Oct 16 23:04:36 IST 2018]; root of context hierarchy - [prepareRefresh:590] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.358 [main]            INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7dfe49c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - [postProcessAfterInitialization:326] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.686 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) - [initialize:91] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.703 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.718 [main]            INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.718 [main]            INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34 - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.729 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/dyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.864 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.864 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1450 ms - [prepareWebApplicationContext:285] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.920 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/] - [addRegistration:187] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.923 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.923 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.923 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:37.924 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] - [configure:245] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.136 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... - [getConnection:110] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.228 [main]            INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. - [getConnection:123] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.274 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' - [createNativeEntityManagerFactory:361] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.294 [main]            INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] - [logPersistenceUnitInformation:31] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.365 [main]            INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final} - [logVersion:45] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.367 [main]            INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found - [<clinit>:213] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.402 [main]            INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final} - [<clinit>:66] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.503 [main]            INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect - [<init>:157] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.598 [main]            INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true - [useContextualLobCreation:85] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.599 [main]            INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@14b789f6 - [register:148] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:38.977 [main]            INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' - [buildNativeEntityManagerFactory:415] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.296 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.584 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be6e01c: startup date [Tue Oct 16 23:04:36 IST 2018]; root of context hierarchy - [initControllerAdviceCache:588] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.635 [main]            WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning - [openEntityManagerInViewInterceptor:237] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.688 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getReputationEmployeeName],methods=[GET]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.getReputationEmployee(java.lang.String) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.689 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/saveReputationEmployee],methods=[POST]}" onto public com.example.postgresdemo.model.ReputationEmployee com.example.postgresdemo.controller.WebController.createReputationEmployee(com.example.postgresdemo.model.ReputationEmployee) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.690 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.example.postgresdemo.controller.WebController.process() - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.695 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.696 [main]            INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) - [register:549] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.737 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:39.738 [main]            INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - [registerHandler:373] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.018 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup - [afterSingletonsInstantiated:433] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.020 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure - [autodetect:895] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.024 [main]            INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] - [registerBeanInstance:668] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.036 [main]            INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.274 [main]            INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.284 [main]            INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' - [start:206] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:40.287 [main]            INFO  c.e.p.PostgresDemoApplication - Started PostgresDemoApplication in 4.172 seconds (JVM running for 4.672) - [logStarted:59] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:44.212 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' - [log:180] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:44.213 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started - [initServletBean:494] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:44.229 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms - [initServletBean:509] - [] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:44.331 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - Saving ReputationEmployee data - [createReputationEmployee:52] - [r_e_name=Tom] - [] 
+[runway:dev:DYadav-MBP.local] 23:04:44.332 [http-nio-8080-exec-1] INFO  c.e.p.controller.WebController - ReputationEmployee name: Tom - [createReputationEmployee:53] - [r_e_name=Tom] - [] 
+[runway:dev:DYadav-MBP.local] 23:07:58.059 [http-nio-8080-exec-3] INFO  c.e.p.controller.WebController - Saving ReputationEmployee data - [createReputationEmployee:52] - [r_e_name=Tom] - [] 
+[runway:dev:DYadav-MBP.local] 23:07:58.059 [http-nio-8080-exec-3] INFO  c.e.p.controller.WebController - ReputationEmployee name: Tom - [createReputationEmployee:53] - [r_e_name=Tom] - [] 

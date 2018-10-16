@@ -8,7 +8,7 @@
 		<File>${logsDir:-logs}/${logFileName:-runway}.log</File>
 
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<fileNamePattern>${logsDir:-logs}/archives/${logFileName:-r4e-autofind}.%i.log</fileNamePattern>
+			<fileNamePattern>${logsDir:-logs}/archives/${logFileName:-runway}.%i.log</fileNamePattern>
 			<minIndex>1</minIndex>
 			<maxIndex>1</maxIndex>
 		</rollingPolicy>
@@ -29,14 +29,22 @@
 		</encoder>
 	</appender>
 	
-	<root>
-		<level value="INFO" />
-		<appender-ref ref='FILE' />
-		<appender-ref ref='CONSOLE' />
-	</root>
+	<appender name="logstash-syslog"
+			class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+			<remoteHost>localhost</remoteHost>
+			<port>5601</port>
+			<encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+	</appender>
+	
+	<!--  
+		<root>
+			<level value="INFO" />
+			<appender-ref ref='FILE' />
+			<appender-ref ref='CONSOLE' />
+			<appender-ref ref='logstash-syslog' />
+		</root>
+	-->
 	
 	<!-- Add your custom loggers here -->
-	<logger name="com.reputation.redis.RedisContainer" level="info" />
-	<logger name="com.reputation.autofind.service.AutofindService" level="info" />
-	
+	<logger name="com.example.postgresdemo.controller.WebController" level="info" />
 </configuration>

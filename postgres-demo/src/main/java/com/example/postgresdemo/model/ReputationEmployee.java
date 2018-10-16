@@ -3,9 +3,11 @@ package com.example.postgresdemo.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class Student {
+@Table(name = "Employee")
+public class ReputationEmployee {
 
 	@Id
 	private String id;
@@ -40,10 +42,10 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-	public Student() {
+	public ReputationEmployee() {
 	}
 
-	public Student(String id, String firstName, String lastName) {
+	public ReputationEmployee(String id, String firstName, String lastName) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
