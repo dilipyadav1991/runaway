@@ -18,7 +18,11 @@ public class VerticalOrderTraversal {
 	}
 
 	private void printVerticalOrder(Node root) {
+		System.out.println("Hello World");
+		if(root == null)
+			return;
 		HashMap<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
+		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		Queue<Node> Q = new LinkedList<Node>();
 		LinkedList<Integer> hd = new LinkedList<>();
 
@@ -30,6 +34,7 @@ public class VerticalOrderTraversal {
 
 		while (!Q.isEmpty()) {
 			Node node = Q.peek();
+			Q.remove();
 			Integer distance = hd.poll();
 
 			if (map.containsKey(distance)) {
@@ -40,8 +45,29 @@ public class VerticalOrderTraversal {
 				map.put(distance, list);
 			}
 
+			System.out.println("map: " + map);
 			// To do: Track Min and Max Level
-		}
+			minHd = Math.min(distance, minHd);
+			maxHd = Math.max(distance, maxHd);
 
+			// push children of node to the queue and its distance
+			if (node.left != null) {
+				Q.add(node.left);
+				hd.add(distance - 1);
+			}
+			if (node.right != null) {
+				Q.add(node.right);
+				hd.add(distance + 1);
+			}
+		}
+		
+		System.out.println("minHd: " + minHd);
+		System.out.println("maxHd: " + maxHd);
+		for(int i = minHd; i <= maxHd; i++){
+			if(map.containsKey(i)){
+				result.add(map.get(i));
+			}
+		}
+		System.out.println(result);
 	}
 }
