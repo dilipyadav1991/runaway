@@ -31,7 +31,7 @@ public class ReveredEvenList {
 			odd = even.next;
 			even.next = odd.next;
 			even = odd.next;
-			if (even.next == null) {
+			if (even == null || even.next == null) {
 				break;
 			}
 		}
