@@ -46,7 +46,7 @@ public class MinHeap {
 	private void swap(int i, int j) {
 		int temp = items[i];
 		items[i] = items[j];
-		items[j] = items[i];
+		items[j] = temp;
 	}
 
 	private void ensureCapacity() {
@@ -72,7 +72,8 @@ public class MinHeap {
 		if (size == 0)
 			throw new IllegalStateException();
 		int item = items[0];
-		items[0] = items[size--];
+		items[0] = items[size - 1];
+		size--;
 		heapifyDown();
 		return item;
 	}
@@ -86,17 +87,32 @@ public class MinHeap {
 	}
 
 	public void heapifyDown() {
-
+		int index = 0;
+		while (hasLeftChild(index)) {
+			int smallerChildIndex = getLeftChildIndex(index);
+			if (hasRightChild(index) && getRightChild(index) < getLeftChild(index)) {
+				smallerChildIndex = getRightChildIndex(index);
+			}
+			if (items[index] < items[smallerChildIndex])
+				break;
+			else
+				swap(index, smallerChildIndex);
+			index = smallerChildIndex;
+		}
 	}
 
 	public static void main(String[] args) {
 		MinHeap minHeap = new MinHeap();
-		minHeap.add(10);
-		minHeap.add(15);
+		minHeap.add(1000);
 		minHeap.add(20);
 		minHeap.add(17);
 		minHeap.add(18);
 		int x = minHeap.peek();
 		System.out.println("The root element is: " + x);
+		minHeap.poll();
+		x = minHeap.peek();
+		System.out.println("The root element is: " + x);
+		int y = minHeap.poll();
+		System.out.println("The removed element is: " + y);
 	}
 }
