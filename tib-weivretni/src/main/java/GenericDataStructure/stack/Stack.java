@@ -1,11 +1,11 @@
 package GenericDataStructure.stack;
 
- interface Stack<T> {
-	 void push(T data);
+interface Stack<T> {
+	void push(T data);
 
-	 T pop();
+	T pop();
 
-	 T peek();
+	T peek();
 
-	 boolean empty();
+	boolean empty();
 }
