@@ -46,7 +46,7 @@ public class LinkedList<T> {
 		list.add("3");
 		list.add("4");
 		list.print();
-		list.remove("Binod");
+		list.remove("3");
 		list.print();
 
 	}
