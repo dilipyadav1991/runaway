@@ -39,6 +39,10 @@ public class LinkedList<T> {
 		System.out.println(" null ");
 	}
 
+	public Node<T> getHead() {
+		return head;
+	}
+
 	public static void main(String[] args) {
 		LinkedList<String> list = new LinkedList<String>();
 		list.add("1");
