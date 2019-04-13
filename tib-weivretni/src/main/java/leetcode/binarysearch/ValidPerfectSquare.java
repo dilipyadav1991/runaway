@@ -1,5 +1,7 @@
 //https://www.urbanpro.com/class-ix-x-tuition/fastest-way-how-to-check-if-a-number-is-a
 
+//http://burningmath.blogspot.com/2013/09/how-to-check-if-number-is-perfect-square.html
+
 package leetcode.binarysearch;
 
 public class ValidPerfectSquare {
